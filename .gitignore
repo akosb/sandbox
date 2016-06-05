@@ -3,5 +3,5 @@
 # no files from dist
 dist
 # no node things ...
-node-modules
+node_modules
 npm-debug.log
