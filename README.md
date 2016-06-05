@@ -17,6 +17,7 @@
   * _react_ is a react/flux based one, with more libraries (d3*, react*, flux, underscore, etc.)
 * minimum UI formatting is implemented (bootstrap or semantic-ui could be applied easily)
 * error messages printed to the console
+* when adding a city 'enter' can be used, in additon to 'add city' link/button
 
 # Build
 ```
