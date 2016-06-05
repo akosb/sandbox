@@ -9,13 +9,14 @@
 * You may use any programming language, frameworks and libraries.
 
 # Comments
-* javascript is used, with node/npm on client side
-* 2 variatons are implemeted
-* _quick_ is "vanilla" javascript, with some d3 libraries
-* _react_ is implemented using several npm packages esp. react + flux
-* minimum UI formatting is implemented ( bootstrap or semantic-ui could be applied easily)
+* javascript is used for implementing
+* a web server is required to run the examples (eg. nginx)
+* node/npm/browserify is required to build the projects
+* 2 projects are implemeted
+  * _quick_ is "vanilla" javascript, with some d3 libraries (d3-queue, d3-request, underscore)
+  * _react_ is a react/flux based one, with more libraries (d3*, react*, flux, underscore, etc.)
+* minimum UI formatting is implemented (bootstrap or semantic-ui could be applied easily)
 * error messages printed to the console
-* assumes that a web server is available (eg. nginx)
 
 # Build
 ```
