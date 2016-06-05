@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>weather demo</title>
+    <link rel="stylesheet" href="quick.css" />
+</head>
+
+<body onload="controller.load();">
+    <div id="main">
+        <div id="controlPanel">
+            <input type="text" id="cityInput" onkeypress="controller.enterCity(event);">
+            <div id="buttons">
+                [<a href="#" onclick="controller.addCity();">Add city</a>] [
+                <a href="#" onclick="controller.search();">Search</a>] [
+                <a href="#" onclick="controller.clearCities();">Clear</a>]
+            </div>
+            <ul id="cities"></ul>
+        </div>
+        <div id="resultPanel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                            <span class="sort" onclick="controller.sortBy( 'name', 'asc'); ">&#9650;</span>
+                            <span class="sort" onclick="controller.sortBy( 'name', 'desc'); ">&#9660;</span>
+                        </th>
+                        <th>
+                            Temp
+                            <span class="sort" onclick="controller.sortBy( 'temp', 'asc'); ">&#9650;</span>
+                            <span class="sort" onclick="controller.sortBy( 'temp', 'desc'); ">&#9660;</span>
+                        </th>
+                        <th>
+                            Pressure
+                            <span class="sort" onclick="controller.sortBy( 'pressure', 'asc'); ">&#9650;</span>
+                            <span class="sort" onclick="controller.sortBy( 'pressure', 'desc'); ">&#9660;</span>
+                        </th>
+                        <th>
+                            Humidity
+                            <span class="sort" onclick="controller.sortBy( 'humidity', 'asc'); ">&#9650;</span>
+                            <span class="sort" onclick="controller.sortBy( 'humidity', 'desc'); ">&#9660;</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="resultTable"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="vendor.js " type="text/javascript "></script>
+<script src="controller.js " type="text/javascript "></script>
+
+</html>

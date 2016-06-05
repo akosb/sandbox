@@ -1,0 +1,26 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "demo app",
+  "main": "index.js",
+  "scripts": {
+    "build-quick": "browserify -r d3-queue -r d3-request -r underscore > quick/vendor.js",
+    "build-react-vendor": "browserify -r d3-queue -r d3-request -r underscore -r flux -r react -r react-dom -r react-router -r keymirror -r object-assign > react/dist/vendor.js",
+    "build-react": "browserify -t [ babelify ] react/src/reactApp.js -o react/dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "d3-queue": "^2.0.3",
+    "d3-request": "^0.4.7",
+    "flux": "^2.1.1",
+    "keymirror": "^0.1.1",
+    "object-assign": "^4.1.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1",
+    "underscore": "^1.8.3"
+  }
+}

@@ -1,0 +1,7 @@
+# no mac info ...
+*.DS_Store
+# no files from dist
+dist
+# no node things ...
+node-modules
+npm-debug.log

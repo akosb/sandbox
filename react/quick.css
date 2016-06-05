@@ -1,0 +1,61 @@
+#main {
+    width: 880px;
+    margin: auto;
+}
+
+#controlPanel {
+    width: 200px;
+    padding: 20px;
+    background-color: #efefef;
+    float: left;
+}
+
+#resultPanel {
+    width: 600px;
+    padding: 20px;
+    background-color: #c5c5c5;
+    float: right;
+}
+
+#cityInput {
+    width: 100%;
+}
+
+#buttons {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+td {
+    padding: 2px;
+}
+
+td.right {
+    text-align: right;
+}
+
+tr.odd {
+    background-color: #efefef;
+}
+
+tr.even {
+    background-color: #fff;
+}
+
+.sort {
+    cursor: pointer;
+}
